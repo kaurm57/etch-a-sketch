@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Effect on Divs</title>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+</style>
+</head>
+<body>
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+
+<script>
+    // Select all elements with class 'box'
+    const boxes = document.querySelectorAll('.box');
+
+    // Function to handle mouseenter event
+    function handleMouseEnter(event) {
+        if (event.target.classList.contains('box')) {
+            event.target.style.backgroundColor = "black";
+        }
+    }
+
+    // Function to handle mouseleave event
+    function handleMouseLeave(event) {
+        if (event.target.classList.contains('box')) {
+            event.target.style.backgroundColor = "lightblue";
+        }
+    }
+
+    // Add event listeners for mouseenter and mouseleave
+    boxes.forEach((box) => {
+        box.addEventListener("mouseenter", handleMouseEnter);
+        box.addEventListener("mouseleave", handleMouseLeave);
+    });
+</script>
+
+</body>
+</html>

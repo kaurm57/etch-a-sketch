@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href= "./images/pen.png" type="image/x-icon"> 
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js-file.js" defer></script>
+
+</head>
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="main">
+        <div id="controls">
+            <div id="rangeValue"></div>
+            <input id="range" type="range" min="1" max="100" step="1" value="50">
+            <div class="color-text">Pen Color</div>
+            <input class="colorselector" id="colorPicker" type="color" id="colorPicker" name="colorPicker" value="#000000">
+            <div class="color-text">Grid Color</div>
+            <input class="colorselector" id="bgColorPicker" type="color" id="colorPicker" name="colorPicker" value="#FFFFFF">
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="borderButton">Border</button>
+            <button id="clearButton">Clear</button>
+        </div>
+        <div id="container"></div>
+    </div>
+</body>
+</html>
