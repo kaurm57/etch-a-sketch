@@ -3,7 +3,7 @@
 This is a simple Etch-a-Sketch web app where you can draw on a grid and change colors!
 
 ## Live Site
-Check it out here: [Etch-a-Sketch](https://kaurm57.github.io/etch-a-sketch/)
+Check it out here: <a href="https://kaurm57.github.io/etch-a-sketch/" target="_blank">Etch-a-Sketch</a>
 
 ## Features
 - Draw on a grid
